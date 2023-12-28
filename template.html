@@ -1,7 +1,7 @@
 <!-- This website template was created by: Ralph Eimerson Ompoc -->
 <!--                       File Name: template.html             -->
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 <head>
 	<title>Template</title>
 	<meta charset="utf-8">
@@ -16,13 +16,30 @@
 </head>
 <body>
 	<div id="container">
-	
-		<!-- Use the header area for the website name or logo !!! Missing Image -->
-		<header>		
+        
+		<header id="ffc-logo">		
 			<a href="index.html"><img src="images/company-logo.png" alt="Company logo"></a>    
-		</header>		
+		</header>
+        
+	   <!-- Mobile and Tablet Nav -->
+        <nav class="mobile-tablet-nav">
+			<div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Our Team</a>
+                <a href="specials.html">News</a>
+                <a href="training.html">Training</a>
+                <a href="collection.html">Projects</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+		</nav>		
 		
-		<nav>
+        <!-- Desktop Nav -->
+		<nav class="desktop-nav">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
@@ -33,16 +50,12 @@
 				<li><a href="faqs.html">FAQs</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
-		</nav>
+		</nav>	
 		
-		
-		<main>
-		
+		<main>		
 			<div>
-			</div>
-			
-		</main>
-		
+			</div>			
+		</main>		
 		
 		<footer>
 			<p>&#169; Copyright 2021. All Right Reserved.</p>
@@ -50,5 +63,7 @@
 			<p>Ralph Eimerson Ompoc&nbsp;&nbsp; C0921675</p>
 		</footer>
 	</div>
+    
+    <script src="scripts/script.js"></script>
 </body>
 </html>

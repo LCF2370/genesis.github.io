@@ -21,7 +21,7 @@ header {
     text-align: left;
 }
 header img{
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     padding: 0;
 	margin: 5px;
@@ -29,10 +29,26 @@ header img{
     vertical-align: middle;
 }
 
+/* Navigation Bar for Mobile and Tablet hamburger menu */
+.mobile-tablet-nav a {
+    color: #000;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+.mobile-tablet-nav a.menu-icon{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 /* Navigation Bar */
 nav{
-    padding: 0;
-    margin: 0;
+    padding: 1%;
+    margin: 1%;
 }
 nav ul {
 	list-style-type: none;
@@ -52,10 +68,23 @@ nav li a {
 	padding: 0.5em 1em;
 	text-decoration: none;
 }
+/* Hide or Show navigation element */
+.menu-icon{
+    display: block;
+}
+.desktop-nav, #menu-links{
+    display: none;
+}
 
 /* Media Query for Tablet Viewport*/
 @media screen and (min-width:630px), print{
-	
+    /* Hiding Elements */
+    .desktop-nav, #menu-links {
+        display: none;
+    }
+    .mobile-tablet-nav{
+        display: block;
+    }
 }
 
 /* Media Query for Desktop Viewport */
@@ -68,13 +97,19 @@ nav li a {
 	}
     
 	/* Desktop Viewport: Style rules for nav area */
-	nav {
+    .mobile-tablet-nav{
+        display: none;
+    }
+    .desktop-nav{
+        display: block;
+    }
+    nav{
 		float: right;
-		width: 75%;
-        height: 110px;
+		width: 73%;
+        height: 80px;
 		margin: 0;
         background-color: #339c95;
-	}	
+    }
 	nav ul{
 		text-align: right;
         vertical-align: text-bottom;
@@ -84,12 +119,14 @@ nav li a {
 		border: none;
 	}	
 	nav li a{
-		padding: 1.8em 1em;
+		padding: 1.4em 1em;
 	}	
 	nav li a:hover{
 		color: #fff;
-		background-color: #22817b;
+        transform: scale(1.1);
+		box-shadow: 0 0 15px #22817b;
 	}
+    
     /* Desktop Viewport: Style Rules for main content */
 	main{
 		clear: left;
@@ -127,3 +164,8 @@ footer a{
 	color: #000;
 	text-decoration: none;
 }	
+footer a:hover{
+    color: #000;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #22817b;
+}
