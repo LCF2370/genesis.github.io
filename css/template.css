@@ -11,6 +11,15 @@ body, header, nav, main, footer, h1, div, img, ul {
 	padding: 0;
 	border: 0;
 }
+/* Style rules for body */
+body{
+    background: #339c95;    
+}
+/* Default image style format */
+img{
+    max-width: 100%;
+    display: block;
+}
 /* Header */
 header {
 	position:-webkit-sticky;
@@ -68,6 +77,12 @@ nav li a {
 	padding: 0.5em 1em;
 	text-decoration: none;
 }
+
+/* Style rules for main */
+main{    
+    background: #fff;
+}
+
 /* Hide or Show navigation element */
 .menu-icon{
     display: block;
